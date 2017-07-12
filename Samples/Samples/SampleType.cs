@@ -1,4 +1,4 @@
-﻿namespace Samples.Commands
+﻿namespace Samples.Samples
 {
 	internal enum SampleType
 	{

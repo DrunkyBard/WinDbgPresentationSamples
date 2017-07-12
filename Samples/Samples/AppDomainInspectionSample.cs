@@ -4,7 +4,7 @@ using System;
 using System.Diagnostics;
 using Console = Samples.ConsoleUtility;
 
-namespace Samples.Commands
+namespace Samples.Samples
 {
 	internal sealed class AppDomainInspectionSample : Sample
 	{

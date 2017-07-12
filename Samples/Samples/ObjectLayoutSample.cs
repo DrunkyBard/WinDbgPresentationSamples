@@ -6,7 +6,7 @@
 
 using System;
 
-namespace Samples.Commands
+namespace Samples.Samples
 {
 	internal sealed class ObjectLayoutSample : Sample
 	{

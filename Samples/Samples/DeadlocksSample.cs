@@ -1,8 +1,7 @@
-﻿using System;
-using System.Threading;
+﻿using System.Threading;
 using Console = Samples.ConsoleUtility;
 
-namespace Samples.Commands
+namespace Samples.Samples
 {
 	internal sealed class DeadlocksSample : Sample
 	{

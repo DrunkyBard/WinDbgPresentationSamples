@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Diagnostics;
 
-namespace Samples.Commands
+namespace Samples.Samples
 {
 	internal abstract class Sample
 	{

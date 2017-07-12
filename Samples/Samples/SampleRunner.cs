@@ -3,14 +3,14 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
-namespace Samples.Commands
+namespace Samples.Samples
 {
-	internal sealed class CommandRunner
+	internal sealed class SampleRunner
 	{
 		private readonly Dictionary<int, Sample> _supportedCommands;
 		private readonly string _selectionView;
 
-		internal CommandRunner(IReadOnlyCollection<Sample> supportedCommands)
+		internal SampleRunner(IReadOnlyCollection<Sample> supportedCommands)
 		{
 			_supportedCommands = supportedCommands
 				.Select((sample, i) => new {i, sample})

@@ -62,16 +62,16 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Commands\AppDomainInspectionSample.cs" />
-    <Compile Include="Commands\BreakpointsSample.cs" />
-    <Compile Include="Commands\DeadlocksSample.cs" />
-    <Compile Include="Commands\HeapAndStackInspectionSample.cs" />
-    <Compile Include="Commands\MemoryLeaksSample.cs" />
-    <Compile Include="Commands\Sample.cs" />
-    <Compile Include="Commands\CommandRunner.cs" />
-    <Compile Include="Commands\ObjectInspectionSample.cs" />
-    <Compile Include="Commands\ObjectLayoutSample.cs" />
-    <Compile Include="Commands\SampleType.cs" />
+    <Compile Include="Samples\AppDomainInspectionSample.cs" />
+    <Compile Include="Samples\BreakpointsSample.cs" />
+    <Compile Include="Samples\DeadlocksSample.cs" />
+    <Compile Include="Samples\HeapAndStackInspectionSample.cs" />
+    <Compile Include="Samples\MemoryLeaksSample.cs" />
+    <Compile Include="Samples\Sample.cs" />
+    <Compile Include="Samples\SampleRunner.cs" />
+    <Compile Include="Samples\ObjectInspectionSample.cs" />
+    <Compile Include="Samples\ObjectLayoutSample.cs" />
+    <Compile Include="Samples\SampleType.cs" />
     <Compile Include="ConsoleUtility.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

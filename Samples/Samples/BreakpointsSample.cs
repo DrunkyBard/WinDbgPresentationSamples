@@ -3,7 +3,7 @@
 
 using System.Runtime.CompilerServices;
 
-namespace Samples.Commands
+namespace Samples.Samples
 {
 	internal sealed class BreakpointsSample : Sample
 	{

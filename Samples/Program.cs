@@ -1,5 +1,5 @@
 ﻿using System.Collections.Generic;
-using Samples.Commands;
+using Samples.Samples;
 
 namespace Samples
 {
@@ -18,8 +18,8 @@ namespace Samples
 				new DeadlocksSample()
 			};
 
-			var commandRunner = new CommandRunner(samples);
-			commandRunner.Run();
+			var sampleRunner = new SampleRunner(samples);
+			sampleRunner.Run();
 		}
 	}
 }

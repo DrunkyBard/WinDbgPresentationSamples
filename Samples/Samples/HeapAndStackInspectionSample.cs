@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using Console = Samples.ConsoleUtility;
 
-namespace Samples.Commands
+namespace Samples.Samples
 {
 	internal class HeapAndStackInspectionSample : Sample
 	{
