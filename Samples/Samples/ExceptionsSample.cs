@@ -1,4 +1,7 @@
-﻿using System;
+﻿// ReSharper disable RedundantCatchClause
+#pragma warning disable 168
+
+using System;
 
 namespace Samples.Samples
 {
