@@ -65,6 +65,7 @@
     <Compile Include="Samples\AppDomainInspectionSample.cs" />
     <Compile Include="Samples\BreakpointsSample.cs" />
     <Compile Include="Samples\DeadlocksSample.cs" />
+    <Compile Include="Samples\ExceptionsSample.cs" />
     <Compile Include="Samples\HeapAndStackInspectionSample.cs" />
     <Compile Include="Samples\MemoryLeaksSample.cs" />
     <Compile Include="Samples\Sample.cs" />

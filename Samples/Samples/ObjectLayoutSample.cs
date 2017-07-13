@@ -23,7 +23,7 @@ namespace Samples.Samples
 			GC.KeepAlive(fooClassInstance);
 		}
 
-		private sealed class FooClass
+		private sealed class FooClass : AbstractClass, IInterface
 		{
 			public readonly string StringField;
 			public readonly BarStruct StructField;
@@ -35,6 +35,27 @@ namespace Samples.Samples
 				StructField = new BarStruct(1337, "BarStructStringField");
 				ByteArray = new byte[] {1, 2, 3};
 			}
+
+			public override void AbstractMethod()
+			{
+			}
+
+			public void A()
+			{
+			}
+
+			public int B(int i) => i;
+		}
+
+		private interface IInterface
+		{
+			void A();
+			int B(int i);
+		}
+
+		private abstract class AbstractClass
+		{
+			public abstract void AbstractMethod();
 		}
 
 		private struct BarStruct
