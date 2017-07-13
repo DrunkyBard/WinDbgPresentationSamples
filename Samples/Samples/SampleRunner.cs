@@ -39,6 +39,7 @@ namespace Samples.Samples
 				{
 					Console.ForegroundColor = ConsoleColor.Red;
 					Console.WriteLine("Incorrect sample. Press any key to continue");
+					Console.ReadKey(true);
 					Console.ResetColor();
 				}
 			}
