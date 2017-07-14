@@ -16,12 +16,16 @@ namespace Samples.Samples
 
 			var generic1 = new SomeGenericClass<int>();
 			var generic2 = new SomeGenericClass<string>();
+			var generic3 = new SomeGenericClass<object>();
 			
 			generic1.Foo();
 			generic2.Foo();
 
 			generic1.SomeGenericMethod<int>();
 			generic1.SomeGenericMethod<string>();
+			generic2.SomeGenericMethod<object>();
+			generic2.SomeGenericMethod<string>();
+			generic3.SomeGenericMethod<string>();
 
 			var nonGeneric = new SomeClassWithGenericMethod();
 			nonGeneric.Foo<int>();
