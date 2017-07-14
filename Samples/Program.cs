@@ -9,9 +9,8 @@ namespace Samples
 		{
 			var samples = new List<Sample>
 			{
-				new ObjectLayoutSample(),
-				new BreakpointsSample(),
 				new ObjectInspectionSample(),
+				new BreakpointsSample(),
 				new HeapAndStackInspectionSample(),
 				new AppDomainInspectionSample(),
 				new MemoryLeaksSample(),

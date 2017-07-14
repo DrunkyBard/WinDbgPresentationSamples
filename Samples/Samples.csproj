@@ -71,7 +71,6 @@
     <Compile Include="Samples\Sample.cs" />
     <Compile Include="Samples\SampleRunner.cs" />
     <Compile Include="Samples\ObjectInspectionSample.cs" />
-    <Compile Include="Samples\ObjectLayoutSample.cs" />
     <Compile Include="Samples\SampleType.cs" />
     <Compile Include="ConsoleUtility.cs" />
     <Compile Include="Program.cs" />
