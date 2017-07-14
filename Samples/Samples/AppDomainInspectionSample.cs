@@ -24,7 +24,7 @@ namespace Samples.Samples
 	}
 
 	[Serializable]
-	public sealed class CrossDomainObject
+	public sealed class CrossDomainObject : MarshalByRefObject
 	{
 		public void WriteCurrentDomain()
 		{
