@@ -5,6 +5,7 @@
 #pragma warning disable 414
 
 using System;
+using System.Collections.Generic;
 
 namespace Samples.Samples
 {
@@ -16,19 +17,11 @@ namespace Samples.Samples
 		protected override void ExecuteInternal()
 		{
 			var fooClassInstance = new FooClass();
-			var barClassInstance = new BarClass();
 
 			Console.WriteLine("Foo class instance created. Press ENTER to continue...");
 			Console.ReadLine();
 
 			GC.KeepAlive(fooClassInstance);
-			GC.KeepAlive(barClassInstance);
-		}
-
-		private sealed class BarClass : ISomeGenericInterface<int>
-		{
-			public void Test(int input)
-			{ }
 		}
 
 		private sealed class FooClass : AbstractClass, IInterface, ISomeGenericInterface<string>
@@ -36,12 +29,21 @@ namespace Samples.Samples
 			public readonly string StringField;
 			public readonly BarStruct StructField;
 			public readonly byte[] ByteArray;
+			public readonly Dictionary<int, string> Dictionary;
+			public readonly List<string> List;
 
 			public FooClass()
 			{
 				StringField = "FooClassStringField";
 				StructField = new BarStruct(1337, "BarStructStringField");
 				ByteArray = new byte[] {1, 2, 3};
+				Dictionary = new Dictionary<int, string>
+				{
+					{ 1, "First" },
+					{ 2, "Second" },
+					{ 3, "Third" }
+				};
+				List = new List<string>{"First", "Second", "Third"};
 			}
 
 			public override void AbstractMethod()

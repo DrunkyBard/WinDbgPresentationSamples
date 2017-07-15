@@ -14,7 +14,8 @@ namespace Samples
 				new HeapAndStackInspectionSample(),
 				new AppDomainInspectionSample(),
 				new MemoryLeaksSample(),
-				new DeadlocksSample()
+				new DeadlocksSample(),
+				new ExceptionsSample()
 			};
 
 			var sampleRunner = new SampleRunner(samples);

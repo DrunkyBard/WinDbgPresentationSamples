@@ -1,4 +1,5 @@
 ﻿// ReSharper disable UnusedTypeParameter
+// ReSharper disable ReturnValueOfPureMethodIsNotUsed
 #pragma warning disable 219
 
 using System.Runtime.CompilerServices;
@@ -12,6 +13,7 @@ namespace Samples.Samples
 
 		protected override void ExecuteInternal()
 		{
+			ToString();
 			FirstMethod();
 
 			var generic1 = new SomeGenericClass<int>();

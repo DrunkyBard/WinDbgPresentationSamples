@@ -2,6 +2,7 @@
 #pragma warning disable 168
 
 using System;
+using System.Diagnostics;
 
 namespace Samples.Samples
 {
@@ -18,6 +19,8 @@ namespace Samples.Samples
 			}
 			catch (Exception e)
 			{
+				Console.WriteLine("Before shutdown");
+				Debugger.Break();
 				throw;
 			}
 		}
