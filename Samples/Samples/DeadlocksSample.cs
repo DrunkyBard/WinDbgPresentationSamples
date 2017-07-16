@@ -10,6 +10,15 @@ namespace Samples.Samples
 
 		protected override void ExecuteInternal()
 		{
+			ThreadPool.QueueUserWorkItem(_ =>
+			{
+				Thread.Sleep(Timeout.Infinite);
+			});
+			ThreadPool.QueueUserWorkItem(_ =>
+			{
+				Thread.Sleep(Timeout.Infinite);
+			});
+
 			Thread CreateDeadlockedThread(EventWaitHandle ewh1, EventWaitHandle ewh2)
 			{
 				var thread = new Thread(_ =>
